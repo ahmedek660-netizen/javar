@@ -119,6 +119,20 @@ const sum = (...nam) => {
 }
 console.log(sum(1,2,3,4,5));
 //===============================================================================================================
+//12. Write a function that returns a promise which resolves after 3 seconds with a 'Success' message. (0.5 Grade)
+//• Output Example: “Success”
+
+function Success(){
+  return new Promise((r,j)=>{
+    setTimeout(()=>{
+      console.log("Success");
+      r()
+    },3000)
+  })
+}
+Success().then(()=>console.log(""))
+
+//===============================================================================================================
 //13. Write a function to find the largest number in an array. (0.5 Grade)
 //• Input Example: [1, 3, 7, 2, 4]
 //• Output Example: 7
@@ -132,8 +146,28 @@ console.log(max);
 const str = "The quick brown fox"
 const arr6 = str.split(" ")
 console.log(arr6);
-//===============================================================================================================
-
-
+//===============================================Q2================================================================
+//1. What is the difference between forEach and for...of? When would you use each? (0.5 Grade)
+//: position parametr (vule) asyncrons لو عندك حاجه مش بتاخد وقت نستخدمهاforeach   
+//لو عندك حاجه بتاخد وقت نستخدم for of   
+//==================================================================================================================
+//2. What is hoisting and what is the Temporal Dead Zone (TDZ)? Explain with examples. (0.5 Grade)
+//المنطقه دي اسمها المساحه الميته اللي بتكون فوق لما اعمل لlet ,const هويستنج مشقادر acsess عليها غير لما اعملها initilazion
+//hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope before code execution. This means that you can use a variable or function before it is declared in the code.
+//==================================================================================================================
+//3. What are the main differences between == and ===? (0.5 Grade)
+//== compare the values
+//=== compare the values and the data type
+//==================================================================================================================
+//4. Explain how try-catch works and why it is important in async operations. (0.5 Grade)
+//try catch is used to handle errors in javascript and it is important in async operations because it allows us to handle errors that may occur during the execution of asynchronous code.
+//=================================================================================================================
+//5. What’s the difference between type conversion and coercion? Provide examples of each. (0.5 Grade)
+//الجافا اللي بتعملها conversion
+//احنا اللي بنعملها coercion
+//==================================================================================================================
+//......
+//...
+//
 
 
